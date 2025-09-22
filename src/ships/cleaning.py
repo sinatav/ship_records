@@ -13,11 +13,10 @@ import logging
 logger = logging.getLogger(__name__)
 
 PLACE_NORMALIZATION = {
-    # example map, extend from your notebooks' corrections
     "St. Johns": "St Johns",
     "St. John's": "St Johns",
     "N. York": "New York",
-    # Add mappings discovered in notebooks
+    # TODO: Add 
 }
 
 def normalize_place(name: Optional[str]) -> Optional[str]:
