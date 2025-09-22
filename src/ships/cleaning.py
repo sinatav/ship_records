@@ -59,7 +59,7 @@ def standardize_dates(df, col):
     return df
 
 def clean_text(text):
-    """Remove extra spaces, normalize NaN markers."""
+    """Remove [nan], normalize spacing, strip whitespace."""
     if pd.isna(text):
         return None
     return str(text).replace("[nan]", "").strip()
