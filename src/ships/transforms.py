@@ -1,5 +1,4 @@
 """
-Transform helpers that appeared in notebooks:
 - splitting slash-separated indices
 - extracting structured details from free-text remarks
 """

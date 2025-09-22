@@ -1,5 +1,4 @@
 """
-Cleaning utilities observed in your notebooks:
 - normalize place names
 - fix alternative names
 - fix voyage ids, remove stray indices
