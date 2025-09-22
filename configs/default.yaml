@@ -1,0 +1,7 @@
+data:
+  place_column: place
+  voyage_id_column: voyage_id
+io:
+  sample_rows: 1000
+viz:
+  top_edges: 50
