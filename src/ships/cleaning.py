@@ -52,3 +52,14 @@ def fix_voyage_ids(df: pd.DataFrame, id_col: str = "voyage_id") -> pd.DataFrame:
         return s
     df[id_col] = df[id_col].apply(_clean_id)
     return df
+
+def standardize_dates(df, col):
+    """Convert dates to dd/mm/yyyy format."""
+    df[col] = pd.to_datetime(df[col], errors="coerce").dt.strftime("%d/%m/%Y")
+    return df
+
+def clean_text(text):
+    """Remove extra spaces, normalize NaN markers."""
+    if pd.isna(text):
+        return None
+    return str(text).replace("[nan]", "").strip()
