@@ -40,3 +40,6 @@ def main():
     out_path = Path(args.out)
     save_parquet(df, out_path)
     logger.info("Saved %s", out_path)
+
+if __name__ == "__main__":
+    main()
